@@ -43,7 +43,7 @@
   font-weight: bolder;
 }
 
-#signIn{
+#signIn, #verify{
   display: none;
 }
 
@@ -55,6 +55,13 @@
 #alert{
   color:red;
 }
+
+.back{
+  font-size: 2em;
+  text-decoration: none;
+  color:#430049;
+}
+
 
 /*estilos de loader en splash*/
 .loader2 {

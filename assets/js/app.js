@@ -13,7 +13,7 @@ $(document).ready(function(){
   },3500);
   $('#signUp').click(function(){
     $(".content").css('display', 'none');
-    $("#signIn").css('display', 'block')
+    $("#signIn").css('display', 'block');
   })
   /*
   *validar longitud de input teléfono, 
@@ -50,5 +50,17 @@ $(document).ready(function(){
   */
   $('#nextOne').click(function(){
     $('#codigo').text(code);
+  });
+  /*
+  *funcionalidad a primera flecha para volver atrás
+  */
+  $('#firstBack').click(function(){
+    $(".content").css('display', 'block');
+    $("#signIn").css('display', 'none');
+  });
+  $('#codeButton').click(function(){
+    $("#signIn").css('display', 'none');
+    $("#verify").css('display', 'block');
   })
+
 });
