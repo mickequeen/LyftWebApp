@@ -43,7 +43,7 @@
   font-weight: bolder;
 }
 
-#signIn, #verify{
+#signIn, #verify, #signUpForm{
   display: none;
 }
 
@@ -52,7 +52,7 @@
   width: 1.5em;
 }
 
-#alert{
+#alert, #alertTwo{
   color:red;
 }
 
@@ -62,6 +62,9 @@
   color:#430049;
 }
 
+#nextTwo{
+  margin-top: 8em;
+}
 
 /*estilos de loader en splash*/
 .loader2 {

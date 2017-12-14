@@ -1,3 +1,5 @@
+var codevar = "";
+
 $(document).ready(function(){
   /*
   *función de splash
@@ -38,29 +40,53 @@ $(document).ready(function(){
   *función para código aleat.
   */
   function code() {
-  var code = "";
   var str = "123456789";
   for (var i = 0; i < 3; i++) {
-    code += str.charAt(Math.floor(Math.random() * str.length));
+    codevar += str.charAt(Math.floor(Math.random() * str.length));
   }
-  return code;
+  return codevar;
   };
   /*
   *función al presionar botón de continua
   */
   $('#nextOne').click(function(){
-    $('#codigo').text(code);
+    $('#codigo').text(code());
+  });
+  $('#nextTwo').click(function(){
+    $('#verify').css('display', 'none');
+    $('#signUpForm').css('display', 'block')
   });
   /*
-  *funcionalidad a primera flecha para volver atrás
+  *funcionalidad botones para atrás
   */
   $('#firstBack').click(function(){
     $(".content").css('display', 'block');
     $("#signIn").css('display', 'none');
   });
+  $('#secondBack').click(function(){
+    $('#verify').css('display', 'none');
+    $("#signIn").css('display', 'block');
+  });
+
+  /*
+  *función para verificar codigo de verificación
+  */
   $('#codeButton').click(function(){
     $("#signIn").css('display', 'none');
     $("#verify").css('display', 'block');
   })
+  $('#enterCode').keyup(function(){
+    if ($(this).val()==codevar) {
+      $('#nextTwo').removeClass('disabled');
+    }else{
+      $('#nextTwo').addClass('disabled');
+    }
+    if($(this).val().length > 3){
+      $('#alertTwo').text('Favor ingrese sólo 3 dígitos');
+    }else{
+      $('#alertTwo').text('');
+    }
+    return false;
+  });
 
 });
