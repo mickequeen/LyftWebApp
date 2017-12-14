@@ -29,6 +29,7 @@
       </div>
     </div>
   </div>
+  <!--página principal -->
   <section class="content">
     <div class="container">
       <div class="row">
@@ -53,8 +54,8 @@
       </div>
     </div>
   </section>
+  <!--página para ingresar número telefónico -->
   <section id="signIn" class="container">
-
     <div class="row">
       <div class="col-xs-2 col-sm-2">
         <a href="#" id="firstBack" class="back"><i class="fas fa-chevron-circle-left"></i></a>
@@ -113,6 +114,7 @@
       </div>
     </div>
   </section>
+  <!--página en la que se ingresa código dado en modal anterior -->
   <section id="verify" class="container">
     <div class="row">
       <div class="col-xs-2 col-sm-2">
@@ -142,6 +144,7 @@
       </div>
     </div>
   </section>
+  <!--pagina para datos (nombre y correo) -->
   <section id="signUpForm" class="container">
     <div class="row">
       <div class="col-xs-2 col-sm-2">
@@ -153,9 +156,57 @@
         <hr>
       </div>
     </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"><i class="fas fa-user"></i></span>
+          <input id="user" type="text" class="form-control" placeholder="Ingrese Nombre" aria-describedby="basic-addon1">
+        </div>
+      </div>
+    </div>
+    <div id="mailCont" class="row">
+      <div class="col-xs-12 col-sm-12">
+        <div class="input-group">
+          <input id="mail" type="text" class="form-control" placeholder="Ingrese Correo electrónico" aria-describedby="basic-addon2">
+          <span class="input-group-addon" id="basic-addon2">@example.com</span>
+        </div>
+      </div>
+    </div>
+    <div id="terms" class="row">
+      <div class="col-xs-12 col-sm-12">
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary">
+            <input id="check" type="checkbox" autocomplete="off">
+            <span class="glyphicon glyphicon-ok"></span>
+          </label>
+          <span>Estoy de acuerdo con los <a href="#">Términos de servicio</a> de Lyft</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <button id="nextThree"  type="button" class="btn btn-success btn-lg disabled">Continuar</button>
+      </div>
+    </div>
+  </section>
+  <!--página que da el ok con datos ingresados -->
+  <section id="success" class="container">
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
+        <div>
+          <img class="img-responsive" id="LogoSplash" src="assets/img/logo-white.png" alt="logoLyft">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
+        <div>
+          <i id="ok" class="fas fa-check"></i>
+        </div>
+      </div>
+    </div>
   </section>
 
-      
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="assets/js/app.js"></script>

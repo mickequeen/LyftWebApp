@@ -12,7 +12,7 @@ $(document).ready(function(){
   */
   setTimeout(function() {
       $(".content").fadeIn(1500);
-  },3500);
+  },4000);
   $('#signUp').click(function(){
     $(".content").css('display', 'none');
     $("#signIn").css('display', 'block');
@@ -56,6 +56,10 @@ $(document).ready(function(){
     $('#verify').css('display', 'none');
     $('#signUpForm').css('display', 'block')
   });
+  $('#nextThree').click(function(){
+    $('#signUpForm').css('display', 'none');
+    $('#success').css('display', 'block')
+  });
   /*
   *funcionalidad botones para atrás
   */
@@ -67,7 +71,10 @@ $(document).ready(function(){
     $('#verify').css('display', 'none');
     $("#signIn").css('display', 'block');
   });
-
+  $('#thirdBack').click(function(){
+    $('#verify').css('display', 'block');
+    $('#signUpForm').css('display','none')
+  })
   /*
   *función para verificar codigo de verificación
   */
@@ -88,5 +95,14 @@ $(document).ready(function(){
     }
     return false;
   });
-
+  /*
+  *verificar datos sign up
+  */
+  function validar(){
+    if ($('#user').val()!== "" && $('#mail').val()!=="") {
+      $('#nextThree').removeClass('disabled');
+    }
+  };
+  $('#check').change(validar);
+  $('#user').keyup(validar);
 });

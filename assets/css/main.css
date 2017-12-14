@@ -20,12 +20,13 @@
 .content{
   display: none;
 }
-
+/*logo blanco en pagina principal*/
 #nav img{
   height: 4em;
   margin-bottom: 5em;
 }
 
+/*estilos pagina principal*/
 #lyftLyfe{
   background-image: url(../img/background.jpg);
   background-size: cover;
@@ -37,33 +38,73 @@
   padding-top: 15%;
 }
 
+/*transparencia a botones de página principal*/
 #buttons button{
   background-color: rgba(0000,0,0,0.5);;
   color: #fff;
   font-weight: bolder;
 }
 
-#signIn, #verify, #signUpForm{
+/*ocultando secciones*/
+#signIn, #verify, #signUpForm, #success{
   display: none;
 }
 
+/*tamaño banderitas*/
 .dropdownImage{
   height: 1em;
   width: 1.5em;
 }
 
+/*color párrafos de alerta*/
 #alert, #alertTwo{
   color:red;
 }
 
+/*color botones para volver a pagina anterior*/
 .back{
   font-size: 2em;
   text-decoration: none;
   color:#430049;
 }
 
+/*posicion botones de continuar*/
 #nextTwo{
   margin-top: 8em;
+}
+#nextThree{
+  margin-top: 3em;
+}
+
+/*posicion de check a condiciones de uso*/
+#terms{
+  margin-top: 2em;
+}
+
+/*posicion input de usuario*/
+#mailCont{
+  margin-top: 3em;
+}
+
+/*color en checkbox*/
+.btn span.glyphicon {
+  opacity: 0;
+}
+.btn.active span.glyphicon {
+  opacity: 1;
+}
+
+/*estilo pagina final*/
+#success{
+  background:linear-gradient(to bottom right, #430049, #E10073);
+  height: 100vh;
+  padding-top: 40%;
+}
+
+/*estilos check final*/
+#ok{
+  font-size: 7em;
+  color: #fff;
 }
 
 /*estilos de loader en splash*/
