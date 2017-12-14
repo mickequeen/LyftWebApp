@@ -52,6 +52,9 @@
   width: 1.5em;
 }
 
+#alert{
+  color:red;
+}
 
 /*estilos de loader en splash*/
 .loader2 {
