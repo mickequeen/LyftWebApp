@@ -29,7 +29,7 @@
       </div>
     </div>
   </div>
-  <main class="content">
+  <section class="content">
     <div class="container">
       <div class="row">
         <div id="lyftLyfe" class="col-xs-12 col-sm-12">
@@ -46,21 +46,64 @@
           <div class="row">
             <div id="buttons" class="col-xs-12 col-sm-12">
               <button class="btn btn-default" type="button">Log In</button>
-              <button class="btn btn-default" type="button">Sign Up</button>
+              <button id="signUp" class="btn btn-default" type="button">Sign Up</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </main>
+  </section>
+  <section id="signIn" class="container">
+    <div class="row">
+      <div class="col-xs-2 col-sm-2">
+        <i class="fas fa-chevron-circle-left"></i>
+      </div>
+      <div class="col-xs-8 col-sm-8">
+        <h3>Regístrate</h3>
+        <p>Únete ahora y disfruta de un viaje gratis</p>
+        <hr>  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-2 col-sm-2">
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <img class="dropdownImage" src="assets/img/Bandera_Chile.jpg" alt="Chile">
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">
+              <img class="dropdownImage" src="assets/img/Bandera_méxico.jpg" alt="méxico">
+            </a></li>
+            <li><a href="#">
+              <img class="dropdownImage" src="assets/img/Bandera_perú.png" alt="perú" >
+            </a></li>
+            <li><a href="#">
+              <img class="dropdownImage" src="assets/img/Bandera_estados_unidos.png" alt="EEUU">
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-10 col-sm-10">
+        <div class="form-group">
+          <input id="phone" name="phone" type="tel" placeholder="Ingresa número móvil" class="form-control" required>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <p>Te enviaremos un SMS para verificar tu teléfono</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <button type="button" class="btn btn-success btn-lg disabled">Continuar</button>
+      </div>
+    </div>
+  </section>
+  
 
       
-
-
-
-
-
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="assets/js/app.js"></script>

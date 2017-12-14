@@ -11,6 +11,9 @@ $(document).ready(function(){
   setTimeout(function() {
       $(".content").fadeIn(1500);
   },3500);
+  $('#signUp').click(function(){
+    $(".content").css('display', 'none');
+    $("#signIn").css('display', 'block')
+  })
 
-  
 });
