@@ -16,7 +16,8 @@ $(document).ready(function(){
     $("#signIn").css('display', 'block')
   })
   /*
-  *validar longitud de input teléfono 
+  *validar longitud de input teléfono, 
+  *contenido alfanumérico y activación de botón
   */
   $('#phone').keyup(function(){
     if($(this).val().length ===10){
@@ -32,6 +33,22 @@ $(document).ready(function(){
       $('#alert').text('');
     }
     return false;
+  });
+  /*
+  *función para código aleat.
+  */
+  function code() {
+  var code = "";
+  var str = "123456789";
+  for (var i = 0; i < 3; i++) {
+    code += str.charAt(Math.floor(Math.random() * str.length));
+  }
+  return code;
+  };
+  /*
+  *función al presionar botón de continua
+  */
+  $('#nextOne').click(function(){
+    $('#codigo').text(code);
   })
-
 });
